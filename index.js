@@ -12,7 +12,7 @@ app.get('/', async (req, res) => {
         });
         await user1.save();
         res.send('<h2>Hello from James\' Express.js server!</h2>');
-    } catch (error) {
+    } catch     (error) {
         console.error('Error saving user:', error);
         res.status(500).send('Error processing request');
     }
